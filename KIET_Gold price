@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+  long int price,per,TP;
+    scanf("%ld",&price);
+    scanf("%ld",&per);
+    
+    int TPR=per*4;
+    TP=(price*TPR)/100;
+    printf("%ld",price+TP);
+    
+      
+    return 0;
+}
