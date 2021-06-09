@@ -1,0 +1,48 @@
+Solve the following series by observing the reuired patterns.
+
+1 + 2 + 3 + 4 + 5 + 6 = 90
+
+2 + 6 + 9 + 5 + 8 + 1 = 238
+
+9 + 4 + 2 + 3 + 5 + 7 = ?
+
+Input Format
+
+Input contain of 6 numbers.
+
+Constraints
+
+No more constraints
+
+Output Format
+
+Print the desired output
+
+Sample Input 0
+
+1 2 3 4 5 6
+Sample Output 0
+
+90
+
+#######
+
+CODE
+
+#######
+
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int A,B,C,D,E,F;
+    scanf("%d %d %d %d %d %d",&A,&B,&C,&D,&E,&F);
+    int R=((A+B+C)*(D+E+F));
+    printf("%d",R);
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
