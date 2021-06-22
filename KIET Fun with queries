@@ -1,0 +1,36 @@
+calculate set bit from given number n to n;
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+unsigned int c,i,r; // r is the total bits set upto n. p is the bits set in each number
+
+    int E,s,n;
+    scanf("%d",&E);
+    int D=E*2;
+    int A[D];
+    for(i=0;i<D;i++)
+        scanf("%d",&A[i]);
+    
+    for(int j=0;j<E;j++){
+        int F,S;
+        F=j*2;
+        S=F+1;
+          s=A[F];
+          n=A[S];
+        r=0;
+        for(i=s;i<=n;i++){
+            unsigned int p=0;
+                for (c = i; c; c >>= 1) // calculating bits set in each number
+                    {
+                    p += c & 1;
+                 }
+                r+=p;
+            }
+        printf("%d\n",r);
+    }   
+    return 0;
+}
